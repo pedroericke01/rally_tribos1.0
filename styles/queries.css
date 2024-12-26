@@ -154,7 +154,7 @@
         height: 120px;
     }
     main > section#tribos-conteiner > div.tribos{
-        flex-basis: 480px;
+        flex-basis: 500px;
         margin-top: 80px;
     }
     div.tribos> h3{
