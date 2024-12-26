@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/* device breakpoints: 
+1-telas-menores:min-width:328px, max-width:767px
+2-tablets: min-width:768px, max-width:1024px;
+
+3-desktops: min-width:1025px, max-width:1880px
+4-telas-maiores: min-width:1881px*/
+
+
+/* importação da fonte MontSerrat do google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor0:#F2F2F2;
+    --cor1:#F20505;
+    --cor2:#A60303;
+    --cor3:#011C40;
+
+    --fonte_padrao:Arial, Helvetica, sans-serif;
+    --fonte_destaque:"Montserrat", sans-serif;;
+}
+
+@media screen and (min-width:768px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header > nav{
+        display: block;
+    }
+    header > nav > a{
+        margin: 2px;
+
+        width: auto;
+        display: inline-block;
+        border-style: none;
+        border-width: none;
+       
+        background-color:#a603034e;
+    }
+    header > nav > a:hover{
+        border-width: 1px;
+        border-style: outset;
+        background-color: #013170;
+    }
+    header > span.material-symbols-outlined{
+        display: none;
+    }
+    main{
+        height: 1100px;
+        margin: auto;
+    }
+    main > h2{
+        font-size: 28px;
+        padding: 35px;
+    }
+    main > section#nacao-conteiner > div.nacao{
+        margin: 10px;
+        padding: 25px;
+      
+    }
+    main > section#nacao-conteiner > div.nacao > img{
+        width: 88px ;
+        height: 88px;
+    }
+    main > section#tribos-conteiner{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main > section#tribos-conteiner > div.tribos{
+        flex-basis: 180px;
+        margin-top: 35px;
+    }
+    div.tribos> h3{
+        margin: 10px;
+        padding-left: 20px;
+    }
+    div.tribos > div.progresso{
+        height: 14px;
+    }
+    section#tribos-conteiner > div.tribos img{
+        width: 58px;
+        height: 58px;
+
+        position: absolute;
+        top: -160%;
+        
+        /* maneira relativa de mover elemento no eixo X: */
+        left: -20px;
+    }
+}
+@media screen and (min-width:1024px){
+    header{
+        height: 80px;
+    }
+    header > div#logo > a{
+        font-size: 34px;
+    }
+    header > nav > a{
+        margin: 5px;
+    }
+    main{
+        height: 1370px;
+    }
+    main > h2{
+        font-size: 30px;
+        padding: 45px;
+    }
+    main > section#nacao-conteiner > div.nacao{
+        margin: 15px;
+        padding: 30px;
+    }
+    main > section#nacao-conteiner > div.nacao > img{
+        width: 100px ;
+        height: 100px;
+    }
+    main > section#tribos-conteiner > div.tribos{
+        flex-basis: 220px;
+        margin-top: 60px;
+    }
+    div.tribos> h3{
+        font-size: 22px;
+        margin-left: 26px;
+    }
+    div.tribos > div.progresso{
+        width: 68%;
+        height: 13px;
+    }
+    section#tribos-conteiner > div.tribos img{
+        width: 60px;
+        height: 60px;
+        top: -175%;
+    }
+}
+@media screen and (min-width:1280px){
+    header > nav > a{
+        margin: 8px;
+    }
+    main > section#nacao-conteiner > div.nacao{
+        margin: 10px;
+        padding: 38px;
+    }
+    main > section#nacao-conteiner > div.nacao > img{
+        width: 100px ;
+        height: 100px;
+    }
+    main > section#tribos-conteiner > div.tribos{
+        flex-basis: 300px;
+        margin-top: 65px;
+    }
+    div.tribos> h3{
+        font-size: 28px;
+        padding-left: 40px;
+    }
+    div.tribos > div.progresso{
+        width: 65%;
+        height: 15px;
+    }
+    section#tribos-conteiner > div.tribos img{
+        width: 60px;
+        height: 60px;
+
+        top: -155%;
+    }
+}

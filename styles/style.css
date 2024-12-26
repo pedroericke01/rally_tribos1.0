@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+/* importação da fonte MontSerrat do google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor0:#F2F2F2;
+    --cor1:#F20505;
+    --cor2:#A60303;
+    --cor3:#011C40;
+
+    --fonte_padrao:Arial, Helvetica, sans-serif;
+    --fonte_destaque:"Montserrat", sans-serif;;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--fonte_padrao);
+    background-color: var(--cor3);
+    color: var(--cor3);
+}
+header{
+    padding: 15px;
+    font-family: var(--fonte_destaque);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+
+}
+header > div#logo > a{
+    padding: 10px;
+    margin: 10px;
+    font-size: 32px;
+    text-decoration: none;
+    color:white;
+}
+header > nav{
+    display: none;
+}
+header > nav > a{
+    width: 90vw;
+    padding: 5px;
+    margin: 10px;
+    font-size: 17px;
+    border-width: 1px;
+    border-radius: 15px;
+
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-style: outset;
+
+    background-color:var(--cor3);    
+    color: white;
+    box-shadow: 1px 1px 1px var(--cor2);
+
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+header > nav > a:hover{
+    background-color: #013170;
+}
+header > span.material-symbols-outlined{
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    color: var(--cor0);
+    background-color: var(--cor3);
+
+    transition-property: border;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+header > span.material-symbols-outlined:hover{
+    border-width: 1px;
+    border-style: solid;
+}
+
+main{
+    width: 90%;
+    
+    margin: auto;
+   
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  
+    background-color: var(--cor0);
+    box-shadow: 1px 1px 1px var(--cor3);
+    
+}
+main > h2{
+    font-family: var(--fonte_destaque);
+    text-align: center;
+
+    font-size: 28px;
+    padding: 20px;
+}
+main > section#nacao-conteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+main > section#nacao-conteiner > div.nacao{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    border-width: 1px;
+
+    border-style:outset;
+    text-align: center;
+    
+    background-color: var(--cor3);
+    box-shadow: 1px 1px 1px var(--cor3);
+}
+main > section#nacao-conteiner > div.nacao > img{
+    display: block;
+    margin: auto;
+    width: 85px ;
+    height: 85px;
+}
+main > section#nacao-conteiner >div.nacao > div.progresso{
+    text-align: center;
+    font-weight: bolder;
+
+    width: 90%;
+    height: 17px;
+    margin-top: 5px;
+    padding: 4px;
+    border-radius: 18px;
+
+    color: var(--cor0);
+    background-color: #012554;
+    box-shadow: 0px 0px 1px var(--cor0);
+    
+}
+main > section#tribos-conteiner{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+main > section#tribos-conteiner > div.tribos{
+    
+    padding: 8px;
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 140px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+div.tribos> h3{
+    font-size: 20px;
+    margin:16px;
+    align-self: flex-start;
+}
+div.tribos > div.progresso{
+    width: 75%;
+    height: 13px;
+    padding: 5px;
+    border-radius: 20px;
+    
+    position: relative;
+
+    background-color: var(--cor3);
+    box-shadow: 1px 1px 1px var(--cor3);
+
+}
+div.tribos > div.progresso > div.barra_progresso{
+    /* através da propriedade width vamos conseguir controlar o avanço da barra de
+    progresso: */    
+    width:0%;
+    height: 100%;
+    border-radius: 20px;
+    
+    background-color: rgb(133, 208, 21);
+    
+    position: relative;
+ 
+    animation-name: barra_progresso;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+section#tribos-conteiner > div.tribos img{
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    top: -140%;
+    /* maneira relativa de mover elemento no eixo X: */
+    left: -15px;
+}
+section#tribos-conteiner > div.tribos > p.pontuacao{
+    padding: 8px;
+
+    text-align: center;
+    
+    border-style: outset;
+    border-width: 1px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+    color: var(--cor0);
+    background-color: var(--cor2);
+    border-color: var(--cor3);
+    box-shadow: 1px 1px 1px var(--cor3);
+}
+footer{
+    margin-top: 8px;
+    padding: 12px;
+
+    text-align: center;
+    
+    color: var(--cor0);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+
+}
+
+/* animações */
+@keyframes barra_progresso{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
