@@ -105,7 +105,7 @@
         margin: 5px;
     }
     main{
-        height: 1370px;
+        height: 1350px;
     }
     main > h2{
         font-size: 30px;
@@ -138,27 +138,31 @@
     }
 }
 @media screen and (min-width:1280px){
+
+    header > div#logo > a{
+        margin: 18px;
+    }
     header > nav > a{
-        margin: 8px;
+        margin: 10px;
     }
     main > section#nacao-conteiner > div.nacao{
         margin: 10px;
-        padding: 38px;
+        padding: 40px;
     }
     main > section#nacao-conteiner > div.nacao > img{
-        width: 100px ;
-        height: 100px;
+        width: 120px ;
+        height: 120px;
     }
     main > section#tribos-conteiner > div.tribos{
-        flex-basis: 300px;
-        margin-top: 65px;
+        flex-basis: 350px;
+        margin-top: 80px;
     }
     div.tribos> h3{
         font-size: 28px;
         padding-left: 40px;
     }
     div.tribos > div.progresso{
-        width: 65%;
+        width: 60%;
         height: 15px;
     }
     section#tribos-conteiner > div.tribos img{
