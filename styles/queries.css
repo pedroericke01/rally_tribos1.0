@@ -20,7 +20,7 @@
     --fonte_padrao:Arial, Helvetica, sans-serif;
     --fonte_destaque:"Montserrat", sans-serif;;
 }
-
+/* media para tablets: */
 @media screen and (min-width:768px){
     header{
         flex-direction: row;
@@ -94,6 +94,7 @@
         left: -20px;
     }
 }
+/* media para laptops: */
 @media screen and (min-width:1024px){
     header{
         height: 80px;
@@ -137,7 +138,47 @@
         top: -175%;
     }
 }
+/* media para desktops */
 @media screen and (min-width:1280px){
+    header > div#logo > a{
+        margin: 18px;
+    }
+    main > section#nacao-conteiner > div.nacao{
+        margin: 10px;
+        padding: 35px;
+    }
+    main > section#nacao-conteiner > div.nacao > img{
+        width: 100px ;
+        height: 100px;
+    }
+    main > section#nacao-conteiner >div.nacao > div.progresso{
+        height: 19px;
+        margin-top: 8px;
+        padding: 8px;
+    }
+    main > section#tribos-conteiner > div.tribos{
+        flex-basis: 350px;
+        margin-top: 60px;
+    }
+    div.tribos> h3{
+        font-size: 28px;
+        padding-left: 55px;
+    }
+    div.tribos > div.progresso{
+        width: 60%;
+        height: 18px;
+    }
+    section#tribos-conteiner > div.tribos img{
+        width: 60px;
+        height: 60px;
+        top: -160%;
+    }
+    section#tribos-conteiner > div.tribos > p.pontuacao{
+        padding: 11px;
+    }
+}
+/* media para SmatTV */
+@media screen and (min-width:1400px){
     header > div#logo > a{
         margin: 18px;
     }
