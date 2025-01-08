@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* importação da fonte MontSerrat do google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor0:#F2F2F2;
+    --cor1:#F20505;
+    --cor2:#A60303;
+    --cor3:#011C40;
+
+    --fonte_padrao:Arial, Helvetica, sans-serif;
+    --fonte_destaque:"Montserrat", sans-serif;;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--fonte_padrao);
+    background-color: var(--cor3);
+    color: var(--cor3);
+}
+header{
+    padding: 15px;
+    font-family: var(--fonte_destaque);
+    
+    text-align: center;
+
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+}
+header > div#logo > a{
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color:white;
+}
+main{
+    width: 90%;
+    height: 100%;
+
+    margin: auto;
+   
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  
+    background-color: var(--cor0);
+    box-shadow: 1px 1px 1px var(--cor3);
+    
+}
+main > form{
+    width:60%;
+    padding: 40px;
+    margin: auto; 
+}
+form > div#imagem > img{
+    width: 140px;
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+form > div#dados > input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 16px 1%;
+
+    display: block;
+    border-style: ridge;
+    
+    box-shadow: 1px 1px 0px black;
+}
+form > div#dados > input[type="submit"]{
+    width: 100%;
+
+    cursor:pointer;
+    
+    border-style: ridge;
+    border-width: 1px;
+    border-color: rgb(8, 253, 8); 
+    
+    background-color: rgb(25, 252, 25);
+    box-shadow: 1px 1px 1px black;
+    
+    transition-property: all;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+}
+form > div#dados > input[type='submit']:hover{
+    background-color: rgb(0, 228, 0);
+}
+form > div#dados > input[type="reset"]{
+    width: 100%;
+    
+    cursor: pointer;
+
+    border-style: ridge;
+    border-width: 1px;
+    border-color: var(--cor1);
+    background-color: rgba(255, 255, 255, 0); 
+    box-shadow: 1px 1px 1px black;
+    
+    transition-property: all;
+    transition-duration: .8s;
+    transition-timing-function: ease-in-out;
+}
+form > div#dados > input[type='reset']:hover{
+    background-color:var(--cor1);
+}
+form > div#dados > a{
+    margin-left: 2%;
+    text-decoration: none;
+}
+form > div#dados > a > input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    border-style: ridge;
+    border-width: 1px;
+    border-color: var(--cor1);
+    background-color: rgba(255, 255, 255, 0); 
+    box-shadow: 1px 1px 1px black;
+    
+    transition-property: all;
+    transition-duration: .8s;
+    transition-timing-function: ease-in-out;
+}
+form > div#dados > a > input:hover{
+    background-color:var(--cor1);
+}

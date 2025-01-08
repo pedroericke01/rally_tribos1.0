@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* device breakpoints: 
+1-telas-menores:min-width:328px, max-width:767px
+2-tablets: min-width:768px, max-width:1024px;
+
+3-desktops: min-width:1025px, max-width:1880px
+4-telas-maiores: min-width:1881px
+*/
+
+/* criando media querie para tablet: */
+@media screen and (min-width:768px){
+    header{
+        justify-content: space-around;
+    }
+    header > div#logo > a{
+        font-size: 25px;
+    }
+    header > div#botao-reiniciar > input{
+        font-size: 14px;
+        padding: 6px;
+    }
+    main > section#tribos-conteiner > div.tribos{
+        flex-basis: 216px;
+        margin-top: 50px;
+    }
+    div.tribos> h3{
+        font-size: 19px;
+        padding-top: 10px;
+    }
+    section#tribos-conteiner > div.tribos img{
+        width: 90px;
+        height: 90px;
+    }
+    section#tribos-conteiner > div.tribos > p.pontuacao{
+        width: 40%;
+        padding: 6px;
+    }
+    section#tribos-conteiner > div.tribos > p.pontuacao{
+        text-align: center;
+        font-weight: bolder;
+    }
+}
+/* média para laptops: */
+@media screen and (min-width:1024px){
+    header > div#logo > a{
+        font-size: 25px;
+    }
+    header > div#botao-reiniciar > input{
+        font-size: 14px;
+    }
+    main > section#tribos-conteiner > div.tribos{
+        flex-basis: 220px;
+        margin-top: 55px;
+    }
+    div.tribos> h3{
+        font-size: 24px;
+    }
+    section#tribos-conteiner > div.tribos img{
+        width: 100px;
+        height: 100px;
+    }
+    section#tribos-conteiner > div.tribos > p.pontuacao{
+        padding: 7px;
+        font-size: 16px;
+        width: 45%;
+    }
+}
+/* media para desktops */
+@media screen and (min-width:1280px){
+    header{
+        justify-content: space-around;
+    }
+    header > div#logo > a{
+        font-size: 30px;
+    }
+    header > div#botao-reiniciar > input{
+        font-size: 16px;
+        padding: 6px;
+    }
+    main > section#tribos-conteiner{
+        padding-top: 1%;
+    }
+    main > section#tribos-conteiner > div.tribos{
+        flex-basis: 330px;
+        margin-top: 7px;
+    }
+    div.tribos> h3{
+        font-size: 21px;
+        padding-top: 10px;
+    }
+    section#tribos-conteiner > div.tribos img{
+        width: 95px;
+        height: 80px;
+    }
+    section#tribos-conteiner > div.tribos > p.pontuacao{
+        padding: 5px;
+        width: 30%;
+    }
+    section#tribos-conteiner > div.tribos > p.pontuacao{
+        text-align: center;
+        font-weight: bolder;
+    }
+}

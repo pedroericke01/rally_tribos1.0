@@ -30,11 +30,11 @@ header{
     font-family: var(--fonte_destaque);
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-around;    
     align-items: center;
-
+    
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
 
 }

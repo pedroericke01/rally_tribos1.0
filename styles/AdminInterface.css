@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* importação da fonte MontSerrat do google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor0:#F2F2F2;
+    --cor1:#F20505;
+    --cor2:#A60303;
+    --cor3:#011C40;
+
+    --fonte_padrao:Arial, Helvetica, sans-serif;
+    --fonte_destaque:"Montserrat", sans-serif;;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--fonte_padrao);
+    background-color: var(--cor3);
+    color: var(--cor3);
+}
+header{
+    padding: 15px;
+    font-family: var(--fonte_destaque);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+}
+header > div#logo > a{
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color:white;
+}
+header > div#botao-reiniciar > input{
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 12px;
+
+    cursor: pointer;
+    border-style: none;
+    border-width: none;
+
+    background-color:#a603034e;
+    color: white;
+    
+    box-shadow: 1px 1px 1px var(--cor2);
+
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+header > div#botao-reiniciar > input:hover{
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: outset;
+    border-color: var(--cor0);
+    background-color: var(--cor3);
+}
+main{
+    width: 90%;
+    height: 100%;
+
+    margin: auto;
+   
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  
+    background-color: var(--cor0);
+    box-shadow: 1px 1px 1px var(--cor3);
+    
+    position: relative;
+    
+}
+main > section#tribos-conteiner{
+    position: absolute;
+    padding-top: 8%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+
+}
+main > section#tribos-conteiner > div.tribos{
+    margin:7px;
+    flex-basis: 85px;
+}
+div.tribos> h3{
+    text-align: center;
+    font-weight: bolder;
+
+    font-size: 16px;
+    padding-top: 10px;
+}
+section#tribos-conteiner > div.tribos img{
+    width: 80px;
+    height: 80px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section#tribos-conteiner > div.tribos > p.pontuacao{
+    text-align: center;
+    font-weight: bolder;
+    margin: auto;
+
+    width: 50%;
+    margin-top: -5px;
+    padding: 6px;
+    font-size: 13px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--cor3);
+
+    box-shadow: 1px 1px 1px var(--cor3);
+}
