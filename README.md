@@ -1,2 +1,2 @@
 # rally_tribos1.0
- interface de front end para os usuários da FJU
+ interfaces de front end para a FJU
