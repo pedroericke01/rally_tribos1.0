@@ -60,7 +60,7 @@
         padding: 25px;
       
     }
-    main > section#nacao-conteiner > div.nacao > img{
+    main > section#nacao-conteiner > div.nacao > div.imagem-nacao{
         width: 88px ;
         height: 88px;
     }
@@ -83,15 +83,16 @@
     div.tribos > div.progresso{
         height: 14px;
     }
-    section#tribos-conteiner > div.tribos img{
-        width: 58px;
-        height: 58px;
-
+    section#tribos-conteiner > div.tribos  div.imagem-tribo{
+        width: 55px;
+        height: 55px;        
         position: absolute;
-        top: -160%;
-        
-        /* maneira relativa de mover elemento no eixo X: */
-        left: -20px;
+        top: -150%;
+        left: -18px;
+    }
+    section#tribos-conteiner > div.tribos > p.pontuacao{
+        padding: 6px;
+        margin-top: -8px;
     }
 }
 /* media para laptops: */
@@ -116,7 +117,7 @@
         margin: 15px;
         padding: 30px;
     }
-    main > section#nacao-conteiner > div.nacao > img{
+    main > section#nacao-conteiner > div.nacao > div.imagem-nacao{
         width: 100px ;
         height: 100px;
     }
@@ -132,10 +133,18 @@
         width: 68%;
         height: 13px;
     }
-    section#tribos-conteiner > div.tribos img{
-        width: 60px;
-        height: 60px;
-        top: -175%;
+
+    section#tribos-conteiner > div.tribos  div.imagem-tribo{
+        width: 55px;
+        height: 55px;        
+        position: absolute;
+        top: -155%;
+        left: -18px;
+    }
+    section#tribos-conteiner > div.tribos > p.pontuacao{
+        width: 30%;
+        padding: 7px;
+        margin-top: -8px;
     }
 }
 /* media para desktops */
@@ -145,9 +154,9 @@
     }
     main > section#nacao-conteiner > div.nacao{
         margin: 10px;
-        padding: 35px;
+        padding: 40px;
     }
-    main > section#nacao-conteiner > div.nacao > img{
+    main > section#nacao-conteiner > div.nacao > div.imagem-nacao{
         width: 100px ;
         height: 100px;
     }
@@ -168,33 +177,40 @@
         width: 60%;
         height: 18px;
     }
-    section#tribos-conteiner > div.tribos img{
-        width: 60px;
-        height: 60px;
-        top: -160%;
+    section#tribos-conteiner > div.tribos  div.imagem-tribo{
+        width: 58px;
+        height: 58px;        
+        position: absolute;
+        top: -114%;
+        left: -17px;
     }
     section#tribos-conteiner > div.tribos > p.pontuacao{
-        padding: 11px;
+        width: 20%;
+        padding: 10px;
+        margin-top: -8px;
     }
 }
 /* media para SmatTV */
 @media screen and (min-width:1400px){
     header > div#logo > a{
-        margin: 18px;
+        margin: 16px;
     }
     header > nav > a{
+        font-size: 18px;
         margin: 10px;
+    }
+    main > h2{
+        font-size: 34px;
     }
     main > section#nacao-conteiner > div.nacao{
         margin: 10px;
-        padding: 40px;
+        padding: 50px;
     }
-    main > section#nacao-conteiner > div.nacao > img{
+    main > section#nacao-conteiner > div.nacao > div.imagem-nacao{
         width: 120px ;
         height: 120px;
     }
     main > section#nacao-conteiner >div.nacao > div.progresso{
-        
         height: 19px;
         margin-top: 8px;
         padding: 8px;
@@ -204,19 +220,25 @@
         margin-top: 70px;
     }
     div.tribos> h3{
-        font-size: 28px;
+        font-size: 30px;
         padding-left: 100px;
     }
     div.tribos > div.progresso{
         width: 55%;
-        height: 18px;
+        height: 25px;
     }
-    section#tribos-conteiner > div.tribos img{
-        width: 65px;
-        height: 65px;
-        top: -150%;
+   
+    section#tribos-conteiner > div.tribos  div.imagem-tribo{
+        width: 72px;
+        height: 72px;        
+        
+        position: absolute;
+        top: -125%;
+        left: -20px;
     }
     section#tribos-conteiner > div.tribos > p.pontuacao{
-        padding: 11px;
+        width: 20%;
+        padding: 8px;
+        margin-top: -2px;
     }
 }

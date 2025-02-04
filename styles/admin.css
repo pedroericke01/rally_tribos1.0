@@ -94,8 +94,14 @@ main > section#tribos-conteiner{
 
 }
 main > section#tribos-conteiner > div.tribos{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
     margin:7px;
-    flex-basis: 85px;
+    flex-basis: 90px;
 }
 div.tribos> h3{
     text-align: center;
@@ -104,22 +110,23 @@ div.tribos> h3{
     font-size: 16px;
     padding-top: 10px;
 }
-section#tribos-conteiner > div.tribos img{
-    width: 80px;
-    height: 80px;
+section#tribos-conteiner > div.tribos div.imagem-tribo{
+    width: 60px;
+    height: 60px;
 
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    /* background-image: url("../imagens-tribos/asser.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
 }
-section#tribos-conteiner > div.tribos > p.pontuacao{
+section#tribos-conteiner > div.tribos > p.pontuacao{ 
     text-align: center;
     font-weight: bolder;
-    margin: auto;
-
+    
     width: 50%;
-    margin-top: -5px;
-    padding: 6px;
+    margin-top: 0px;
+    padding: 5px;
     font-size: 13px;
     border-radius: 15px;
     border-width: 1px;

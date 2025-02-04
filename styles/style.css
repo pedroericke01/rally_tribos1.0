@@ -130,11 +130,17 @@ main > section#nacao-conteiner > div.nacao{
     background-color: var(--cor3);
     box-shadow: 1px 1px 1px var(--cor3);
 }
-main > section#nacao-conteiner > div.nacao > img{
+main > section#nacao-conteiner > div.nacao > div.imagem-nacao{
     display: block;
     margin: auto;
-    width: 85px ;
-    height: 85px;
+    
+    width: 90px ;
+    height: 90px;
+
+    /* background-image: url("../imagens-nacao/imbativel2.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 main > section#nacao-conteiner >div.nacao > div.progresso{
     text-align: center;
@@ -151,6 +157,7 @@ main > section#nacao-conteiner >div.nacao > div.progresso{
     box-shadow: 0px 0px 1px var(--cor0);
     
 }
+
 main > section#tribos-conteiner{
     margin: auto;
     display: flex;
@@ -176,7 +183,7 @@ main > section#tribos-conteiner > div.tribos{
 }
 div.tribos> h3{
     font-size: 20px;
-    margin:16px;
+    margin:15px;
     align-self: flex-start;
 }
 div.tribos > div.progresso{
@@ -208,18 +215,25 @@ div.tribos > div.progresso > div.barra_progresso{
 
 }
 
-section#tribos-conteiner > div.tribos img{
+section#tribos-conteiner > div.tribos  div.imagem-tribo{
     width: 50px;
     height: 50px;
-
+    
     position: absolute;
     top: -140%;
     /* maneira relativa de mover elemento no eixo X: */
     left: -15px;
+
+    /* background-image: url("../imagens-tribos/asser.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
 }
 section#tribos-conteiner > div.tribos > p.pontuacao{
-    padding: 8px;
-
+    width: 35%;
+    padding: 5px;
+    margin-top: -5px;
     text-align: center;
     
     border-style: outset;
