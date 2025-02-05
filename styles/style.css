@@ -19,7 +19,7 @@
 }
 
 html, body{
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     font-family: var(--fonte_padrao);
     background-color: var(--cor3);
