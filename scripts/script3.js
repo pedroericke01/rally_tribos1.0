@@ -1,11 +1,33 @@
 /* script responsável por realizar a requisição AJAX ao back end da aplicação */
 
-function pegar_tribo(target){
-    console.log(target.target.parentNode);
+/* função que no momento que o usuário clica no ícone de uma
+tribo, será extraida o nome da tribo clicada e esse nome será
+salvo no localstorage */
+function pegar_codigo(target){
+
+    /* garantindo que em qualquer lugar onde o usuário clicar dentro da caixa da tribo
+    ele consiga extrair o nome da tribo específica pelo DOM */
+    if(target.target.nodeName == "H3" || target.target.nodeName == "P"){
+        /* acessando o atributo 'nome-tribo' pelo DOM */
+        var nome = target.target.parentNode.childNodes[1].getAttribute("nome-tribo");
+        
+        /* salvando o nome da tribo no localstorage: */
+        localStorage.setItem("nome-tribo", nome)
+
+        /* fazendo chamada a função que retorna todos os dados da tribo clicada: */
+        pegar_tribo(nome);
+    }else{
+        /* acessando o atributo 'nome-tribo' pelo DOM */
+        var nome = target.target.parentNode.getAttribute("nome-tribo");
+
+        /* salvando o nome da tribo no localstorage: */
+        localStorage.setItem("nome-tribo", nome);
+
+        /* fazendo chamada a função que retorna todos os dados da tribo clicada: */
+        pegar_tribo(nome);
+
+    }
     
-    var nome = target.target.parentNode.getAttribute('nome-tribo');
-    
-    console.log(nome);
 }
 
 /* estrutura das tribos:
@@ -31,16 +53,14 @@ function criar_tribos(nome, pontuacao){
     tag_imagem.className = "imagem-tribo";
     tag_pontuacao.className = "pontuacao";
 
-    
-    /* criando o atributo que permitirá identificar cada tribo individualmente pelo DOM*/
-    tribo.setAttribute("nome-tribo", nome);
-    
+    /* criando atributo que me permite idendificar cada tribo pelo nome: */
     tag_link.setAttribute("nome-tribo", nome);
     
     /* atualizando os conteúdos dentro das tags específicas: */
-    
     tag_nome.innerHTML = `${nome}`;
+    
     tag_link.href = "../views/admin2.html";
+
     tag_imagem.style.backgroundImage =`url("../imagens-tribos/${nome}.png")`;
     tag_pontuacao.innerHTML = `${pontuacao}`;
 
@@ -51,7 +71,7 @@ function criar_tribos(nome, pontuacao){
     tag_link.appendChild(tag_imagem);
     tribo.appendChild(tag_pontuacao);
     
-    tribo.addEventListener("click", pegar_tribo);
+    tribo.addEventListener("click", pegar_codigo);
 
     return tribo
 }
@@ -93,7 +113,7 @@ const array_tribos = [
     'ruben',
     'simeao',
     'zebulom'
-]
+];
 
 /* adicionando um ouvidor de eventos de clique ao botão de resetar o rally, quando tal
 evento ocorrer vamos ativar uma função callback que vai realizar tal operação na base

@@ -58,11 +58,16 @@ main > form{
     padding: 40px;
     margin: auto; 
 }
-form > div#imagem > img{
+form > div#imagem{
     width: 140px;
     height: 130px;
     display: block;
     margin: auto;
+
+    background-image: url("../imagens-tribos/asser.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 form > div#dados > input{
     width: 90%;

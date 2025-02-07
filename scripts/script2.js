@@ -77,7 +77,7 @@ function criar_tribos(nome, pontuacao){
     div_progresso.appendChild(div_barra);
     div_barra.appendChild(tag_imagem);
     conteiner.appendChild(tag_pontuacao)
-
+    
 }
 
 /* função para carregar todas as nações da minha base de dados genêrica: */
