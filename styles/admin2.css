@@ -40,6 +40,7 @@ header > div#logo > a{
     text-decoration: none;
     color:white;
 }
+
 main{
     width: 90%;
     height: 100%;
@@ -58,11 +59,19 @@ main > form{
     padding: 40px;
     margin: auto; 
 }
-form > div#imagem > img{
+form > div#imagem{
     width: 140px;
     height: 130px;
+
+    border-radius: 30px;
+
     display: block;
     margin: auto;
+
+    background-image: url("../icon/icon-nova/logo-fju.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 form > div#dados > input{
     width: 90%;

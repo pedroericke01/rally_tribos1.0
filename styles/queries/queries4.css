@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* device breakpoints: 
+1-telas-menores:min-width:328px, max-width:767px
+2-tablets: min-width:768px, max-width:1024px;
+
+3-desktops: min-width:1025px, max-width:1880px
+4-telas-maiores: min-width:1881px
+*/  
+
+@media screen and (min-width:768px){
+    
+    section.navegacao{
+        width: 350px;
+        height: 65px;
+    }
+
+    section.navegacao > nav > a{
+        font-size: 16px;
+    }
+
+    table{
+        font-size: 16px;
+    }
+
+    thead > tr > th{
+        top: -10px;
+        padding: 5px;
+    }
+
+    td.icones-controle > span{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (min-width:1024px){
+  
+    main{
+
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        position: static;
+    }
+
+    section.navegacao{
+        width: 100px;
+        height: 50%;
+
+        margin: 0px 0px 30px 0px;
+
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 0px;
+    }
+
+    section.navegacao > nav{
+        flex-direction: column;
+    }
+
+    section.navegacao > nav > a{
+        font-size: 16px;
+    }
+
+    /* corrigir a partir dessa linha */
+    div.dados{
+        position: static;
+
+        top: none;
+        left: none;
+        transform: none;
+        
+        width: 85%;
+        height: 70%;
+
+        margin: 0px 60px 40px 60px;
+
+    }
+
+    table{
+        font-size: 16px;
+    }
+
+    thead > tr > th{
+        
+        top: -8px;
+        padding: 5px;
+    }
+    th, td{
+        padding: 5px;
+    }
+
+    td.icones-controle > span{
+        font-size: 23px;
+        padding: 5px;
+        margin: 0px 5px;
+    }
+}

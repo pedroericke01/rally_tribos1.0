@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* importação da fonte MontSerrat do google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor0:#F2F2F2;
+    --cor1:#F20505;
+    --cor2:#A60303;
+    --cor3:#011C40;
+
+    --fonte_padrao:Arial, Helvetica, sans-serif;
+    --fonte_destaque:"Montserrat", sans-serif;;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    height: 100vh;
+
+    font-family: var(--fonte_padrao);
+    color: var(--cor3);
+    background-color: var(--cor3);
+}
+
+header{
+    padding: 30px;
+
+    text-align: center;
+
+    font-family: var(--fonte_destaque);
+    
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+}
+header > div#logo > a{
+    margin: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color:white;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    
+    background-color: var(--cor0);
+    box-shadow: 1px 1px 1px var(--cor3);
+    
+    position: relative;
+}
+
+section.navegacao{
+    width: 300px;
+    height: 55px;
+
+    margin: auto;
+    
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+    background-color: var(--cor3);
+    box-shadow: 1px 1px 1px var(--cor3);
+    
+}
+
+section.navegacao > nav{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: transparent;
+}
+
+section.navegacao > nav > a{
+    font-size: 15px;
+    
+    padding: 5px;
+
+    text-decoration: none;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: transparent;
+
+    font-family: var(--fonte_padrao);
+    color: white;
+
+    transition: all .3s linear;
+}
+
+section.navegacao > nav > a:hover{
+    border-color: var(--cor0);
+}
+
+div.dados{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+
+    width: 95%;
+    height: 70%;
+    
+    overflow: auto;
+
+    background-color: transparent;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+
+    border-collapse: collapse;
+    
+    font-family: var(--fonte_padrao);
+    
+    font-size: 12px;
+    
+    color: black;
+}
+thead{
+    color: white;
+    background-color:var(--cor3);
+}
+thead > tr > th{
+    position: sticky;
+    top: -8px;
+    padding: 5px;
+}
+th, td{
+    padding: 5px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+/* removendo o filtro de invisibilidade do codigo do usuário */
+td.num{
+    text-align: center;
+    filter: blur(0px);
+}
+
+tbody > tr{
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+/* ocultando os dados sensíveis da conta do usuário */
+tbody > tr > td{
+    background-color: transparent;
+    filter: blur(10px);
+}
+
+/* adicionando animação CSS a tabela */
+tbody > tr:hover{
+    background-color:#011c403b;
+}
+
+/* remover o filtro de invisibilidade da coluna relacionada aos controles */
+tbody > tr > td.icones-controle{
+    text-align: center;
+    filter: blur(0px);
+}
+td.icones-controle > span{
+    font-size: 14px;
+    padding: 5px;
+    transition: all .4s linear;
+}
+
+td.icones-controle > span:hover{
+    border-radius: 30px;
+    color: var(--cor0);
+    background-color: var(--cor3);
+}

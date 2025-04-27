@@ -9,7 +9,7 @@
 
 /* media querie para tablets: */
 @media screen and (min-width:768px){
-    form > div#imagem > img{
+    form > div#imagem{
         margin-top: 5%;
         width: 180px;
         height: 170px;
@@ -41,7 +41,7 @@
 }
 /* media para desktops: */
 @media screen and (min-width:1280px){
-    form > div#imagem > img{
+    form > div#imagem{
         margin-top: 1%;
         width: 200px;
         height: 190px;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../icon/icon-nova/favicon.ico" type="image/x-icon">
+    
+    <!-- chamada as media queries: -->
+    <link rel="stylesheet" href="../styles/admin2.css" media="all">
+    <link rel="stylesheet" href="../styles/queries/queries3.css">
+    
+    <!-- chamada ao javascript -->
+    <script src="../scripts/login.js" defer></script>
+
+    <title>FJU Macaé</title>
+</head>
+<body>
+
+    <header>
+
+        <div id="logo">
+            <a href="login.html">Login</a>
+        </div>
+
+    </header>
+    
+    <main>
+
+        <form action="login.html" method= "post">
+
+            <div id="imagem"></div>
+
+            <div id="dados">
+                
+                <input type="email" name="email" id="email" placeholder="Insira seu email" minlength="1" maxlength="60" required>
+                
+                <input type="password" name="senha" id="senha" placeholder="Insira sua senha" minlength="1" maxlength="10" required>
+            
+                <input type="submit" value="Entrar">
+                <input type="reset" value="Limpar">
+            </div>
+
+        </form>
+    </main>
+ 
+</body>
+</html>
