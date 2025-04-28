@@ -20,6 +20,7 @@
     --fonte_padrao:Arial, Helvetica, sans-serif;
     --fonte_destaque:"Montserrat", sans-serif;;
 }
+
 /* media para tablets: */
 @media screen and (min-width:768px){
     header{
@@ -95,6 +96,7 @@
         margin-top: -8px;
     }
 }
+
 /* media para laptops: */
 @media screen and (min-width:1024px){
     header{
@@ -147,6 +149,7 @@
         margin-top: -8px;
     }
 }
+
 /* media para desktops */
 @media screen and (min-width:1280px){
     header > div#logo > a{
@@ -190,6 +193,7 @@
         margin-top: -8px;
     }
 }
+
 /* media para SmatTV */
 @media screen and (min-width:1400px){
     header > div#logo > a{

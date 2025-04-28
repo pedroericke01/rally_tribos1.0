@@ -141,6 +141,7 @@ th, td{
     border-style:solid;
     border-width: 1px;
     border-color: black;
+
 }
 
 /* removendo o filtro de invisibilidade do codigo do usuário */
@@ -159,6 +160,7 @@ tbody > tr > td{
     background-color: transparent;
     filter: blur(10px);
 }
+
 
 /* adicionando animação CSS a tabela */
 tbody > tr:hover{

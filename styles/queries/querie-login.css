@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* device breakpoints: 
+1-telas-menores:min-width:328px, max-width:767px
+2-tablets: min-width:768px, max-width:1024px;
+
+3-desktops: min-width:1025px, max-width:1880px
+4-telas-maiores: min-width:1881px*/
+
+/* media querie para tablets: */
+@media screen and (min-width:768px){
+    form > div#imagem{
+        margin-top: 5%;
+        width: 180px;
+        height: 170px;
+    }
+    form > div#dados > input[type="submit"]{
+        width: 96%;
+    }
+    form > div#dados > input[type="reset"]{
+        width: 96%;
+    }
+    form > div#dados > a{
+        margin-left: 1%;
+    }
+    form > div#dados > a > input{
+        width: 96%;
+    }
+}
+/* media para laptops: */
+@media screen and (min-width:1024px){
+    form > div#dados > input[type="submit"]{
+        width: 94.5%;
+    }
+    form > div#dados > input[type="reset"]{
+        width: 94.5%;
+    }
+    form > div#dados > a > input{
+        width: 94.5%;
+    }
+}
+/* media para desktops: */
+@media screen and (min-width:1280px){
+    form > div#imagem{
+        margin-top: 1%;
+        width: 200px;
+        height: 190px;
+    }
+    form > div#dados > input{
+        width: 70%;
+        margin: 16px 13%;
+    }
+    form > div#dados > input[type="submit"]{
+        width: 73.5%;
+    }
+    form > div#dados > input[type="reset"]{
+        width: 74%;
+    }
+    form > div#dados > a{
+        margin-left: 13%;
+    }
+    form > div#dados > a > input{
+        width: 74%;
+    }
+}
+

@@ -35,6 +35,7 @@ function enviar_dados(email, senha){
         }else{
             /* informando a mensagem de erro */
             window.alert(dados.resultado);
+            
             /* redirecionando o usuário para a interface publica */
             window.location.href = '../views/index.html';
         }
