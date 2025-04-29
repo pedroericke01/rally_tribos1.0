@@ -51,7 +51,8 @@
         margin: 16px 13%;
     }
     form > div#dados > input[type="submit"]{
-        width: 73.5%;
+        width: 74%;
+        
     }
     form > div#dados > input[type="reset"]{
         width: 74%;
@@ -64,3 +65,17 @@
     }
 }
 
+/*  media queries para orientação paisagem*/
+
+/* para dispositivos móveis */
+@media screen and (orientation:landscape) and (max-width:980px){
+    main{
+        height: 125%;
+    }
+    form > div#dados > input[type="submit"]{
+        width: 96%;
+    }
+    form > div#dados > input[type="reset"]{
+        width: 96%;        
+    }
+}

@@ -41,6 +41,7 @@
         font-weight: bolder;
     }
 }
+
 /* média para laptops: */
 @media screen and (min-width:1024px){
     header > div#logo > a{
@@ -76,12 +77,15 @@
         font-size: 16px;
         padding: 6px;
     }
+    main{
+        height: 140%;
+    }
     main > section#tribos-conteiner{
-        padding-top: .5%;
+        padding-top: 2%;
     }
     main > section#tribos-conteiner > div.tribos{
         flex-basis: 330px;
-        margin-top: 7px;
+        margin-top: 10px 7px;
     }
     div.tribos> h3{
         font-size: 21px;
@@ -131,5 +135,27 @@
     section#tribos-conteiner > div.tribos > p.pontuacao{
         text-align: center;
         font-weight: bolder;
+    }
+}
+
+/* media querie para orientação paisagem */
+
+/* para dispositivos móveis */
+@media screen and (orientation:landscape) and (max-width:950px){
+    main{
+        height: 240%;
+    }
+}
+
+/* para tablets */
+@media screen and (orientation:landscape) and (min-width:955px) and (max-width:1195px){
+    
+    main > section#tribos-conteiner{
+        padding-top: 4%;
+        
+    }
+    main > section#tribos-conteiner > div.tribos{
+        flex-basis: 216px;
+        margin:15px 30px;
     }
 }

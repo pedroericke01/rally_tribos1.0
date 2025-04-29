@@ -34,12 +34,13 @@ header{
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
 }
 header > div#logo > a{
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     font-size: 30px;
     text-decoration: none;
     color:white;
 }
+
 main{
     width: 90%;
     height: 100%;
@@ -52,15 +53,23 @@ main{
     background-color: var(--cor0);
     box-shadow: 1px 1px 1px var(--cor3);
     
+    position: relative;
+    
 }
 main > form{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%, -40%);
+
     width:60%;
     padding: 40px;
-    margin: auto; 
+
 }
 form > div#imagem{
     width: 140px;
     height: 130px;
+
     display: block;
     margin: auto;
 
@@ -68,6 +77,11 @@ form > div#imagem{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px 50px;
+    border-color: transparent;
 }
 form > div#dados > input{
     width: 90%;
@@ -81,7 +95,7 @@ form > div#dados > input{
     box-shadow: 1px 1px 0px black;
 }
 form > div#dados > input[type="submit"]{
-    width: 100%;
+    width: 102%;
 
     cursor:pointer;
     
@@ -100,7 +114,7 @@ form > div#dados > input[type='submit']:hover{
     background-color: rgb(0, 228, 0);
 }
 form > div#dados > input[type="reset"]{
-    width: 100%;
+    width: 102%;
     
     cursor: pointer;
 
